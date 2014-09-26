@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** The gene product mentions in text.
- * Updated by JCasGen Thu Sep 25 21:43:20 EDT 2014
+ * Updated by JCasGen Fri Sep 26 02:47:39 EDT 2014
  * @generated */
 public class Gene_Type extends Annotation_Type {
   /** @generated 

@@ -45,7 +45,6 @@ public class GeneCollectionReader extends CollectionReader_ImplBase {
       BufferedReader br = new BufferedReader(fr);
       String line;
       while((line = br.readLine())!=null){
-        System.out.println(line);
         sentences.add(line);
       }
       fr.close();

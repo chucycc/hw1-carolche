@@ -11,8 +11,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** The input file will consist of ascii sentences, one per line. Each sentence will be preceded on the same line by a sentence identifier.
- * Updated by JCasGen Thu Sep 25 21:43:20 EDT 2014
- * XML source: /home/carol/git/hw1-carolche/hw1-carolche/src/main/resources/descriptor/collectionReaderDescriptor.xml
+ * Updated by JCasGen Fri Sep 26 02:47:39 EDT 2014
+ * XML source: /home/carol/git/hw1-carolche/hw1-carolche/src/main/resources/descriptor/typeSystemDescriptor.xml
  * @generated */
 public class Sentence extends Annotation {
   /** @generated

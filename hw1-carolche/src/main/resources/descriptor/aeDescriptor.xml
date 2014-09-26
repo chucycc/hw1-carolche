@@ -7,8 +7,22 @@
     <description/>
     <version>1.0</version>
     <vendor>Carol Cheng</vendor>
-    <configurationParameters/>
-    <configurationParameterSettings/>
+    <configurationParameters>
+      <configurationParameter>
+        <name>modelFile</name>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>modelFile</name>
+        <value>
+          <string>/home/carol/git/hw1-carolche/hw1-carolche/src/main/resources/ne-en-bio-genetag.HmmChunker</string>
+          </value>
+      </nameValuePair>
+    </configurationParameterSettings>
     <typeSystemDescription>
       <imports>
         <import name="descriptor.typeSystemDescriptor"/>

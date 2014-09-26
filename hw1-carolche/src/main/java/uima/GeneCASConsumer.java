@@ -24,6 +24,7 @@ public class GeneCASConsumer extends CasConsumer_ImplBase {
   public static final String PARAM_OUTPUTDIR = "Output";
   private File fOutput;
   private FileWriter fw;
+  private BufferedWriter bw;
    
   public void initialize() throws ResourceInitializationException {
     fOutput = new File(((String) getUimaContext().getConfigParameterValue(PARAM_OUTPUTDIR)).trim());
@@ -36,6 +37,7 @@ public class GeneCASConsumer extends CasConsumer_ImplBase {
     }
     try {
       fw = new FileWriter(fOutput);
+      bw = new BufferedWriter(fw);
     } catch (IOException e) {
       e.printStackTrace();
     }
@@ -51,13 +53,24 @@ public class GeneCASConsumer extends CasConsumer_ImplBase {
     }
     FSIterator<Annotation> iter = jcas.getAnnotationIndex(Gene.type).iterator();
     while (iter.hasNext()) {
-      Gene newGene = (Gene) iter.next();
-      String s = newGene.getId() + "|" + newGene.getBegin() +  " " + newGene.getEnd() + "|" + newGene.getName() + '\n';
+      Gene g = (Gene) iter.next();
+      String s = g.getId() + "|" + g.getBegin() +  " " + g.getEnd() + "|" + g.getName();
       try {
-        fw.write(s);
+        bw.write(s);
+        bw.newLine();
       } catch (IOException e) {
         e.printStackTrace();
       }
+    }
+  }
+  
+  @Override
+  public void destroy() {
+    super.destroy();
+    try {
+      bw.close();
+    } catch (IOException e) {
+      e.printStackTrace();
     }
   }
 }

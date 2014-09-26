@@ -11,8 +11,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** The gene product mentions in text.
- * Updated by JCasGen Thu Sep 25 21:43:20 EDT 2014
- * XML source: /home/carol/git/hw1-carolche/hw1-carolche/src/main/resources/descriptor/collectionReaderDescriptor.xml
+ * Updated by JCasGen Fri Sep 26 02:47:39 EDT 2014
+ * XML source: /home/carol/git/hw1-carolche/hw1-carolche/src/main/resources/descriptor/typeSystemDescriptor.xml
  * @generated */
 public class Gene extends Annotation {
   /** @generated
