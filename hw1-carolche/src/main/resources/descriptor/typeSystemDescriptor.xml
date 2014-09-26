@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>typeSystemDescriptor</name>
+    <description>The type system is used to deal with sentences of input data which contains identifiers and texts. After processed by analysis engine, it will output gene names.</description>
+    <version>1.0</version>
+    <vendor>Carol Cheng</vendor>
+  <types>
+    <typeDescription>
+      <name>Type.input.Sentence</name>
+      <description>The input file will consist of ascii sentences, one per line. Each sentence will be preceded on the same line by a sentence identifier.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>id</name>
+          <description>The sentence identifier of input data.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>text</name>
+          <description>The text of the input data. It would be a sentence which will contains different gene names.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>Type.output.Gene</name>
+      <description>The gene product mentions in text.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>id</name>
+          <description>The sentence identifier of input data. Different genes from the same sentence will have the same identifier.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>name</name>
+          <description>The identified gene names from the input sentences.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>
