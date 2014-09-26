@@ -4,6 +4,13 @@
   <groupId>edu.cmu.lti.11791.f14.hw1</groupId>
   <artifactId>hw1-carolche</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <scm>
+		<connection>scm:git:git@github.com:chucycc/hw0-carolche.git</connection>
+		<developerConnection>
+			scm:git:git@github.com:chucycc/hw0-carolche.git
+	</developerConnection>
+	  <tag>HEAD</tag>
+  </scm>
   <repositories>
     <repository>
       <id>oaqa</id>
