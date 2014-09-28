@@ -8,21 +8,8 @@
     <version>1.0</version>
     <vendor>Carol Cheng</vendor>
     <configurationParameters>
-      <configurationParameter>
-        <name>modelFile</name>
-        <type>String</type>
-        <multiValued>false</multiValued>
-        <mandatory>true</mandatory>
-      </configurationParameter>
-    </configurationParameters>
-    <configurationParameterSettings>
-      <nameValuePair>
-        <name>modelFile</name>
-        <value>
-          <string>/home/carol/git/hw1-carolche/hw1-carolche/src/main/resources/ne-en-bio-genetag.HmmChunker</string>
-          </value>
-      </nameValuePair>
-    </configurationParameterSettings>
+      </configurationParameters>
+    <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>
         <import name="descriptor.typeSystemDescriptor"/>
@@ -47,5 +34,28 @@
       <outputsNewCASes>false</outputsNewCASes>
     </operationalProperties>
   </analysisEngineMetaData>
-  <resourceManagerConfiguration/>
+  <externalResourceDependencies>
+    <externalResourceDependency>
+      <key>modelFile</key>
+      <description/>
+      <optional>false</optional>
+    </externalResourceDependency>
+  </externalResourceDependencies>
+  <resourceManagerConfiguration>
+    <externalResources>
+      <externalResource>
+        <name>modelFile</name>
+        <description>The pre-trained model file "ne-en-bio-genetag.HmmChunker" for LingPipe.</description>
+        <fileResourceSpecifier>
+          <fileUrl>file:ne-en-bio-genetag.HmmChunker</fileUrl>
+        </fileResourceSpecifier>
+      </externalResource>
+    </externalResources>
+    <externalResourceBindings>
+      <externalResourceBinding>
+        <key>modelFile</key>
+        <resourceName>modelFile</resourceName>
+      </externalResourceBinding>
+    </externalResourceBindings>
+  </resourceManagerConfiguration>
 </analysisEngineDescription>

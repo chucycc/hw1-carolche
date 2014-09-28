@@ -20,7 +20,7 @@
       <nameValuePair>
         <name>Output</name>
         <value>
-          <string>/home/carol/git/hw1-carolche/hw1-carolche/src/main/resources/data/hw1-carolche.out</string>
+          <string>hw1-carolche.out</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>

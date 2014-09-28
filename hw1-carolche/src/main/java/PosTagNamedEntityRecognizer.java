@@ -1,3 +1,5 @@
+// This class wasn't used by this UIMA framework.
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
