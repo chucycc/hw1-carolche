@@ -58,7 +58,9 @@ public class LingPipeRunChucker {
     } else {
       try {
         cchunker = (ConfidenceChunker) AbstractExternalizable.readObject(modelFile);
-      } catch (ClassNotFoundException | IOException e) {
+      } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+      } catch (IOException e) {
         e.printStackTrace();
       }
     }
