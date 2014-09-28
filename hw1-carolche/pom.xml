@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.cmu.lti.11791.f14.hw1</groupId>
   <artifactId>hw1-carolche</artifactId>
-  <version>1.1</version>
+  <version>1.1-SNAPSHOT</version>
   <scm>
 		<connection>scm:git:git@github.com:chucycc/hw0-carolche.git</connection>
 		<developerConnection>
